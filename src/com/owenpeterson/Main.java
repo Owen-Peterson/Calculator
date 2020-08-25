@@ -30,6 +30,7 @@ public class Main {
                 case "VOLCYL": functions.volumeOfCylinder();
                 break;
                 case "GUI" : GUI.gui();
+                case "WATTAGE" : functions.wattage();
 
 
             }

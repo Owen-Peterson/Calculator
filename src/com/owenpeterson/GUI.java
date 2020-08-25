@@ -5,9 +5,15 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUI implements ActionListener {
+public class GUI {
 
     public GUI() {
+
+    }
+
+    public static void gui() {
+        int numOfClicks = 0;
+
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
 
@@ -23,14 +29,10 @@ public class GUI implements ActionListener {
         JButton button = new JButton("Click Me");
         panel.add(button);
 
-        JLabel label = new JLabel("Number of clicks: 0");
+        JLabel label = new JLabel("Number of clicks: " + numOfClicks);
         panel.add(label);
-        button.addActionListener(this);
     }
 
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        
-    }
+
 }

@@ -31,6 +31,13 @@ public class Functions {
         System.out.println("Volume of cylinder: "+ (r*r)*Math.PI*h);
         returnToProgram();
     }
-    void reverseString(){}
 
+    void wattage(){
+        System.out.println("Volts: ");
+        int v = input.nextInt();
+        System.out.println("Amps: ");
+        int a = input.nextInt();
+        System.out.println(v * a + " Watts");
     }
+    }
+
